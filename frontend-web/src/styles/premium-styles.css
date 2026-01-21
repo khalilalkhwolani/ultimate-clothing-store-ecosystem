@@ -1,0 +1,343 @@
+/* Premium Styles - Fashion E-commerce Admin Dashboard */
+
+/* ========================================
+   PREMIUM UTILITY CLASSES
+   ======================================== */
+
+/* Card Enhancements */
+.card-premium {
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 1px solid var(--border);
+}
+
+.card-premium:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+/* KPI Card Gradients */
+.kpi-gradient-primary {
+    background: linear-gradient(135deg, rgba(58, 49, 222, 0.08) 0%, rgba(124, 58, 237, 0.04) 100%);
+}
+
+.kpi-gradient-success {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(34, 197, 94, 0.02) 100%);
+}
+
+.kpi-gradient-info {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(59, 130, 246, 0.02) 100%);
+}
+
+.kpi-gradient-warning {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(245, 158, 11, 0.02) 100%);
+}
+
+/* Icon Containers */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    transition: all var(--transition-fast);
+}
+
+.icon-container-primary {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+    color: white;
+    box-shadow: var(--shadow-primary);
+}
+
+.icon-container-success {
+    background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.icon-container-info {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.icon-container-warning {
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    color: #1E2938;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+/* ========================================
+   ANIMATION KEYFRAMES
+   ======================================== */
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse-primary {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(58, 49, 222, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 8px rgba(58, 49, 222, 0);
+    }
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   LOADING STATES
+   ======================================== */
+
+.skeleton-shimmer {
+    background: linear-gradient(90deg,
+            var(--muted) 25%,
+            var(--accent) 50%,
+            var(--muted) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+}
+
+/* ========================================
+   BUTTON ENHANCEMENTS
+   ======================================== */
+
+.btn-hover-lift {
+    transition: all var(--transition-fast);
+}
+
+.btn-hover-lift:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-hover-lift:active {
+    transform: translateY(0);
+}
+
+/* Primary button glow */
+.btn-primary-glow:hover {
+    box-shadow: var(--shadow-primary);
+}
+
+/* ========================================
+   TABLE ENHANCEMENTS
+   ======================================== */
+
+.table-premium tbody tr {
+    transition: background-color var(--transition-fast);
+}
+
+.table-premium tbody tr:hover {
+    background-color: var(--accent);
+}
+
+.table-premium th {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: var(--muted-foreground);
+}
+
+/* ========================================
+   SIDEBAR ENHANCEMENTS
+   ======================================== */
+
+.sidebar-dark {
+    background: var(--sidebar);
+    color: var(--sidebar-foreground);
+}
+
+.sidebar-item {
+    position: relative;
+    transition: all var(--transition-fast);
+    border-radius: 8px;
+}
+
+.sidebar-item:hover {
+    background: var(--sidebar-accent);
+}
+
+.sidebar-item-active {
+    background: var(--sidebar-accent);
+}
+
+.sidebar-item-active::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: var(--sidebar-primary);
+    border-radius: 0 4px 4px 0;
+}
+
+.sidebar-section-title {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sidebar-muted);
+    padding: 0.75rem 1rem 0.5rem;
+}
+
+/* ========================================
+   HEADER ENHANCEMENTS
+   ======================================== */
+
+.header-search {
+    background: var(--input-background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: all var(--transition-fast);
+}
+
+.header-search:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(58, 49, 222, 0.15);
+}
+
+.notification-badge {
+    background: var(--destructive);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 600;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   CHART ENHANCEMENTS
+   ======================================== */
+
+.chart-container {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+/* ========================================
+   STATUS BADGES
+   ======================================== */
+
+.badge-success {
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.badge-warning {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.badge-error {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--destructive);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.badge-info {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--info);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* ========================================
+   TREND INDICATORS
+   ======================================== */
+
+.trend-up {
+    color: var(--success);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+}
+
+.trend-down {
+    color: var(--destructive);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+}
+
+/* ========================================
+   RTL SUPPORT
+   ======================================== */
+
+[dir="rtl"] .sidebar-item-active::before {
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+/* ========================================
+   ANIMATION UTILITIES
+   ======================================== */
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.animate-count-up {
+    animation: countUp 0.4s ease-out;
+}
+
+/* ========================================
+   DARK MODE ADJUSTMENTS
+   ======================================== */
+
+.dark .card-premium:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.dark .icon-container-primary {
+    box-shadow: 0 4px 12px rgba(129, 140, 248, 0.2);
+}
+
+.dark .header-search:focus-within {
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
+}
