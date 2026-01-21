@@ -91,25 +91,22 @@ flutter run
 ## 📸 Gallery
 
 ### 📱 Mobile Application
-<div align="center">
-  <img src="docs/img/mobile_home.png" width="200" alt="Home Screen" style="border-radius: 10px; margin: 5px;">
-  <img src="docs/img/mobile_product.png" width="200" alt="Product Details" style="border-radius: 10px; margin: 5px;">
-  <img src="docs/img/mobile_cart.png" width="200" alt="Shopping Cart" style="border-radius: 10px; margin: 5px;">
-  <img src="docs/img/products.jpg" width="200" alt="Products Grid" style="border-radius: 10px; margin: 5px;">
-</div>
-<br>
-<div align="center">
-  <img src="docs/img/login.jpg" width="200" alt="Login Screen" style="border-radius: 10px; margin: 5px;">
-  <img src="docs/img/singup.jpg" width="200" alt="Signup Screen" style="border-radius: 10px; margin: 5px;">
-  <img src="docs/img/chat.jpg" width="200" alt="Chat Feature" style="border-radius: 10px; margin: 5px;">
-  <img src="docs/img/lang-ar-en.jpg" width="200" alt="Multi-language" style="border-radius: 10px; margin: 5px;">
-</div>
+
+| Home Screen | Product Details | Shopping Cart | Products Grid |
+|-------------|-----------------|---------------|---------------|
+| ![Home Screen](docs/img/mobile_home.png) | ![Product Details](docs/img/mobile_product.png) | ![Shopping Cart](docs/img/mobile_cart.png) | ![Products Grid](docs/img/products.jpg) |
+
+| Login Screen | Signup Screen | Chat Feature | Multi-language |
+|--------------|---------------|--------------|----------------|
+| ![Login Screen](docs/img/login.jpg) | ![Signup Screen](docs/img/singup.jpg) | ![Chat Feature](docs/img/chat.jpg) | ![Multi-language](docs/img/lang-ar-en.jpg) |
 
 ### 💻 Web Dashboard
-<div align="center">
-  <img src="docs/img/web_dashboard.png" width="80%" alt="Main Dashboard" style="border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <img src="docs/img/order-web.png" width="80%" alt="Order Management" style="border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</div>
+
+![Main Dashboard](docs/img/web_dashboard.png)
+*Main Dashboard - Real-time Analytics & Management*
+
+![Order Management](docs/img/order-web.png)
+*Order Management System*
 
 ---
 
